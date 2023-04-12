@@ -37,9 +37,9 @@ endif()
 #
 
 # general
-option(LLAMA_STATIC                 "llama: static link libraries"                          OFF)
-option(LLAMA_NATIVE                 "llama: enable -march=native flag"                      OFF)
-option(LLAMA_LTO                    "llama: enable link time optimization"                  OFF)
+option(LLAMA_STATIC                 "llama: static link libraries"                          ON)
+option(LLAMA_NATIVE                 "llama: enable -march=native flag"                      ON)
+option(LLAMA_LTO                    "llama: enable link time optimization"                  ON)
 
 # debug
 option(LLAMA_ALL_WARNINGS           "llama: enable all compiler warnings"                   ON)
@@ -59,7 +59,7 @@ option(LLAMA_FMA                    "llama: enable FMA"                         
 
 # 3rd party libs
 option(LLAMA_ACCELERATE             "llama: enable Accelerate framework"                    ON)
-option(LLAMA_OPENBLAS               "llama: use OpenBLAS"                                   OFF)
+option(LLAMA_OPENBLAS               "llama: use OpenBLAS"                                   ON)
 
 option(LLAMA_BUILD_TESTS            "llama: build tests"    ${LLAMA_STANDALONE})
 option(LLAMA_BUILD_EXAMPLES         "llama: build examples" ${LLAMA_STANDALONE})
